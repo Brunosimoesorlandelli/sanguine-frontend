@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="../src/assets/styles.css " />
+  <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+  <title>Sanguine</title>
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="nav-bar">
+      <ul>
+        <li><button id="float-left" class="nav-button">Sanguine</button></li>
+        <li><button id="float-left" class="nav-button">Sobre</button></li>
+        <li><button id="float-left" class="nav-button">Duvidas</button></li>
+        <li><button id="float-left" class="nav-button">Bancos</button></li>
+        <li><button id="float-right" class="nav-button">Registrar</button></li>
+        <li><button id="float-right" class="nav-button">Entrar</button></li>
+      </ul>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+
+  <!--Import app -->
+  <script src="../src/main.js"></script>
+
+  <!--Mount app -->
+  <script>
+    const mountedApp = app.mount('#app')
+  </script>
+
+</body>
+
 </html>
