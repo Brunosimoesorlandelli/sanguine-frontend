@@ -4,8 +4,8 @@ body {
 }
 
 body {
-    background: #ff3333;
-    background: linear-gradient(0deg, #ff3333 0%, #ffffff 65%);
+    background: #ce0000;
+    background: linear-gradient(0deg, #ce0000 0%, #ffffff 65%);
     background-repeat: no-repeat;
     margin: 0px;
     font-family: tahoma;
@@ -21,24 +21,21 @@ ul {
 }
 
 .nav-bar {
-    background: #ff3333;
+    background: #ce0000;
     height: 60px;
     width: 100%;
     margin-bottom: 25px;
-    -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-    -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
     position: fixed;
     border-radius: 0 0 10px 10px;
 }
 
 .nav-button {
-    margin: 0px 10px;
-    font-size: 18px;
+    margin: 0px 15px;
     width: 120px;
-    height: auto;
+    height: 30px;
+    font-size: 18px;
     color: #e8e8e8;
-    padding: 10px;
     text-align: center;
     cursor: pointer;
     background-color: transparent;
@@ -58,4 +55,43 @@ ul {
 
 #float-left {
     float: left;
+}
+
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.input-search {
+    height: 40px;
+    width: 500px;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 50px;
+    border: 2px solid #ce0000;
+    transition: all .5s ease-in-out;
+    background-color: #ce0000;
+    padding-right: 40px;
+    color: rgb(0, 0, 0);
+    margin: 120px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+}
+
+.input-search::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.input-search:focus {
+    width: 600px;
+    background-color: transparent;
+    border: 0px hidden;
+    border-radius: 5px;
+    transition: all 700ms cubic-bezier(0, 0.110, 0.35, 2);
 }
